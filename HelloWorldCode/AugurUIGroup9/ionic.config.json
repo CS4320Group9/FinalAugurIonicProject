@@ -1,0 +1,7 @@
+{
+  "name": "AugurUIGroup9",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
