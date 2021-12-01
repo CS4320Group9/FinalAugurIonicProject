@@ -14,6 +14,8 @@ Install Angular and Ionic:
 ## Running the Project Locally
 
 > cd into the project directory ("HelloWorldCode/AugurUIGroup9")
+> 
+> run "npm install
 >
 > run "ng serve"
 > 
