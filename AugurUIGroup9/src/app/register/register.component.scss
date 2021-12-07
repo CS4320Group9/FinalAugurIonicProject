@@ -1,0 +1,47 @@
+.title {
+    align-items: center;
+    text-align: center;
+}
+.container {
+    background-color:lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    margin: auto;
+    
+}
+
+form {
+    padding: 6px;
+}
+
+.registerBTN {
+    background-color: green;
+    height: 30px;
+    border-radius: 5px;
+    width: 90px;
+}
+.backBTN {
+    background-color: coral;
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+input {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid black;
+    box-sizing: border-box;
+    color: white;
+}
+.help-block {
+    color: red;
+}

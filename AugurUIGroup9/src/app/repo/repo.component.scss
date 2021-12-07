@@ -1,0 +1,66 @@
+#wrapper {
+    position: relative;
+    width: 60%;
+    height: 90%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#title {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 36px;
+}
+
+#logout-btn, #home-btn {
+    position: absolute;
+    bottom: 24px;
+    width: 30%;
+    height: 54px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#logout-btn:hover, #home-btn:hover {
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+#logout-btn ion-icon, #home-btn ion-icon {
+    float: left;
+    font-size: 50px;
+}
+
+#logout-btn div, #home-btn div {
+    width: calc(100% - 50px);
+    float: left;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#home-btn {
+    left: 17.5%;
+}
+
+#logout-btn {
+    right: 17.5%;
+}
+
+#search {
+    position: relative;
+    width: 75%;
+    height: 30px;
+    left: 12.5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#content {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    border: 2px solid black;
+    overflow: scroll;
+}

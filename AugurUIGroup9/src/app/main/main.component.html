@@ -1,0 +1,15 @@
+<div id='wrapper'>
+  <div id='welcome'>Welcome User</div>
+
+  <div id='pages'>
+    <div class='page-btn' id='saved' (click)="yourSavedData()">Your Saved Data</div>
+    <div class='page-btn' id='stats' (click)="viewStatistics()">View Statistics</div>
+    <div class='page-btn' id='repos' (click)="viewRepositories()">View Repositories</div>
+    <div class='page-btn' id='request' (click)="addRepository()">Request to Add a Repository</div>
+  </div>
+
+  <div id='logout-btn'>
+    <ion-icon name="log-out-outline"></ion-icon>
+    <div (click)="onLogout()">Logout</div>
+  </div>
+</div>

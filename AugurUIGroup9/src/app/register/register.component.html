@@ -1,0 +1,33 @@
+<h2 class="title">Augur Register Form</h2>
+
+<div class="container">
+  <form [formGroup]='registerForm' (ngSubmit)='register()'>
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" formControlName="firstname">
+    <div *ngIf="isSubmitted && formControls.firstname.errors" class="help-block">
+      <div *ngIf="formControls.firstname.errors.required">First name is Required</div>
+    </div>
+
+    <label for="lname"><b>Last name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" formControlName="lastname">
+    <div *ngIf="isSubmitted && formControls.lastname.errors" class="help-block">
+      <div *ngIf="formControls.lastname.errors.required">Last name is Required</div>
+    </div>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" formControlName="username">
+    <div *ngIf="isSubmitted && formControls.username.errors" class="help-block">
+      <div *ngIf="formControls.username.errors.required">Username is Required</div>
+    </div>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+    <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+      <div *ngIf="formControls.password.errors.required">Password is Required</div>
+    </div>
+
+    <button type="submit" class="registerBTN" (click)="createAccount()">Register</button>
+    <button  class="backBTN" (click)="login()">Back To Login</button>
+
+</form>
+</div>
