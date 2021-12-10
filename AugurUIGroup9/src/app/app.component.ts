@@ -9,6 +9,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home Page', url: '/main', icon: 'home'},
     { title: 'View Repository', url: '/repo', icon: 'git-branch'},
+    { title: 'Saved Data', url: 'saved', icon: 'git-branch'},
     { title: 'Request', url: 'requestadd', icon: 'home' },
     { title: 'Logout', url: 'logout', icon: 'home' },
   ];
