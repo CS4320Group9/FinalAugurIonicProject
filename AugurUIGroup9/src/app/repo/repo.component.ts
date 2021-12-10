@@ -22,8 +22,8 @@ export class RepoComponent implements OnInit {
     })).then(value => {
       //@ts-ignore
       value.forEach(val => {
-        document.getElementById('content').innerHTML += '<a href=https://' + val['url'] + '>' + val['repo_name'] + '</a> <button type="button" class="home-btn" (click)=addToFavorites(' 
-        + val['repo_id'] + val['repo_name'] + val['url'] + ')>Add To Saved </button>';
+        document.getElementById('content').innerHTML += '<a href=https://'  + val['url'] + '>' + val['repo_name'] + '</a> <button class="home-btn" (click)=addToFavorites(' 
+        + val['repo_id'] +',' + val['repo_name'] +','+ val['url'] + ')>Add To Saved </button>' + '<br/>';
       })
     })
   }
