@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { LoginComponent } from 'src/app/login/login.component';
+import { RegistryService } from 'src/app/registryservice/registry.service';
 
 @Component({
   selector: 'app-saved',
@@ -7,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SavedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase, private registry: RegistryService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    if(this.registry.user != null){
+      console.log("Not tnull");
+    }
+  }
 
 }
