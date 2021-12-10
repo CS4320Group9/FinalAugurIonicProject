@@ -52,4 +52,7 @@ export class LoginComponent implements OnInit {
   register(){
     this.router.navigateByUrl('/register');
   }
+  guest() {
+    this.router.navigateByUrl('/main');
+  }
 }
