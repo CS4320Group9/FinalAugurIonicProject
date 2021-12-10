@@ -6,13 +6,18 @@
     margin: auto;
 }
 
+.btn {
+    width: 10px;
+    height: 10px;
+}
+
 #title {
     margin-top: 25px;
     text-align: center;
     font-size: 36px;
 }
 
-#logout-btn, #home-btn {
+#logout-btn, .home-btn {
     position: absolute;
     bottom: 24px;
     width: 30%;
@@ -23,16 +28,16 @@
     padding-right: 5px;
 }
 
-#logout-btn:hover, #home-btn:hover {
+#logout-btn:hover, .home-btn:hover {
     box-shadow: 1px 1px 5px 1px black;
 }
 
-#logout-btn ion-icon, #home-btn ion-icon {
+#logout-btn ion-icon, .home-btn ion-icon {
     float: left;
     font-size: 50px;
 }
 
-#logout-btn div, #home-btn div {
+#logout-btn div, .home-btn div {
     width: calc(100% - 50px);
     float: left;
     font-size: 30px;
@@ -40,7 +45,7 @@
     text-align: center;
 }
 
-#home-btn {
+.home-btn {
     left: 17.5%;
 }
 

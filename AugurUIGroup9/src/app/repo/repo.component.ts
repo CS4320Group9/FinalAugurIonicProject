@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {resolve} from "@angular/compiler-cli/src/ngtsc/file_system";
 import { Router } from '@angular/router';
+import { RegistryService } from '../registryservice/registry.service';
 
 @Component({
   selector: 'app-repo',
@@ -12,7 +12,7 @@ export class RepoComponent implements OnInit {
 
   data: any;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private registry: RegistryService) { }
 
   ngOnInit() {
 
@@ -22,9 +22,22 @@ export class RepoComponent implements OnInit {
     })).then(value => {
       //@ts-ignore
       value.forEach(val => {
-        document.getElementById('content').innerHTML += '<p>' + val['repo_name'] + '</p>';
+        document.getElementById('content').innerHTML += '<a href=https://' + val['url'] + '>' + val['repo_name'] + '</a> <button class="home-btn" (click)=addToFavorites(' 
+        + val['repo_id'] + val['repo_name'] + val['url'] + ')>';
       })
     })
+  }
+
+  addToFavorites(id: number, name: string, url: string) {
+    console.log("Called for " + name)
+      if(this.registry.user != null){
+        this.registry.savedRepos.push({
+          repo_id: '',
+          repo_name: '',
+          repo_url: '',
+          username: this.registry.user.username
+        })
+      }
   }
 
   goHome() {
@@ -34,4 +47,6 @@ export class RepoComponent implements OnInit {
   onLogout(){
     this.router.navigateByUrl('');
   }
+
+
 }

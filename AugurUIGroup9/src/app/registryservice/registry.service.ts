@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {AngularFireDatabase} from "@angular/fire/compat/database";
 import firebase from "firebase/compat";
+import { SavedRepo } from '../savedrepo/saved-repo';
 import {User} from "../user/user";
 
 @Injectable({
@@ -10,6 +11,7 @@ export class RegistryService {
 
   users: Array<User> = [];
   user: User = null;
+  savedRepos: Array<SavedRepo> = [];
 
   constructor(private database: AngularFireDatabase) {
 

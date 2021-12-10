@@ -12,6 +12,8 @@ export class StatisticsComponent implements OnInit {
   constructor(private router: Router,private http: HttpClient) { }
 
   ngOnInit() {
+    
+  
   }
 
   goHome() {
