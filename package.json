@@ -1,0 +1,19 @@
+{
+  "name": "finalaugurionicproject",
+  "version": "1.0.0",
+  "description": "Install Node.js:\r > https://nodejs.org/en/download/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CS4320Group9/FinalAugurIonicProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CS4320Group9/FinalAugurIonicProject/issues"
+  },
+  "homepage": "https://github.com/CS4320Group9/FinalAugurIonicProject#readme"
+}

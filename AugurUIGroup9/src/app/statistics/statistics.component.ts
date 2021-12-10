@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-statistics',
@@ -7,8 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatisticsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,private http: HttpClient) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
+  goHome() {
+    this.router.navigateByUrl('main');
+  }
+
+  logout() {
+    this.router.navigateByUrl('');
+  }
 }
