@@ -6,6 +6,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { RequestaddComponent } from './requestadd/requestadd.component';
+import { MainComponent } from './main/main.component';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +21,10 @@ import {HttpClientModule} from "@angular/common/http";
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    StatisticsComponent,
+    RequestaddComponent,
+    MainComponent
   ],
   entryComponents: [],
   imports: [

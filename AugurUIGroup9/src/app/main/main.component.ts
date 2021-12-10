@@ -26,10 +26,10 @@ export class MainComponent implements OnInit {
   }
 
   viewStatistics(){
-
+    this.router.navigateByUrl('statistics');
   }
   addRepository(){
-
+    this.router.navigateByUrl('requestadd');
   }
 
   onLogout() {
