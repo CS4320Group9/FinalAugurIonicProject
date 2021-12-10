@@ -13,7 +13,7 @@ Install Angular and Ionic:
 
 ## Running the Project Locally
 
-> cd into the project directory ("HelloWorldCode/AugurUIGroup9")
+> cd into the project directory ("AugurUIGroup9/src/app")
 > 
 > run "npm install
 >
