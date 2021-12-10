@@ -9,6 +9,7 @@ import {User} from "../user/user";
 export class RegistryService {
 
   users: Array<User> = [];
+  user: User = null;
 
   constructor(private database: AngularFireDatabase) {
 

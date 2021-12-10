@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import {RegistryService} from "../registryservice/registry.service";
+import { User } from '../user/user';
 
 @Component({
   selector: 'app-login',
@@ -41,6 +42,7 @@ export class LoginComponent implements OnInit {
       if(user.username == this.loginForm.value.username && user.password == this.loginForm.value.password){
         this.router.navigateByUrl('/main');
         this.loggedIn = true;
+        this.registry.user = user;
       }
     })
     if(!this.loggedIn) {
