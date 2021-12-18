@@ -5,6 +5,8 @@ import { MainComponent } from './main/main.component';
 import { RegisterComponent } from './register/register.component';
 import { RepoComponent } from './repo/repo.component';
 import { RequestaddComponent } from './requestadd/requestadd.component';
+import { SavedComponent } from './saved/saved/saved.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,12 @@ const routes: Routes = [
   {
     path: 'requestadd', component: RequestaddComponent
   },
+  {
+    path: 'statistics', component: StatisticsComponent
+  },
+  {
+    path: 'saved', component: SavedComponent
+  }
 ];
 
 @NgModule({

@@ -9,14 +9,10 @@ export class AppComponent {
   public appPages = [
     { title: 'Home Page', url: '/main', icon: 'home'},
     { title: 'View Repository', url: '/repo', icon: 'git-branch'},
-    { title: 'Request', url: 'requestadd', icon: 'home' },
-    { title: 'Logout', url: 'logout', icon: 'home' },
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'View Statistics', url: '/statistics', icon: 'git-branch'},
+    { title: 'Saved Data', url: '/saved', icon: 'git-branch'},
+    { title: 'Request', url: '/requestadd', icon: 'home' },
+    { title: 'Logout', url: '/login', icon: 'home' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor(public alertController: AlertController) { }

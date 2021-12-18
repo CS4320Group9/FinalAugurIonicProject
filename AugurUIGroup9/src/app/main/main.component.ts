@@ -17,19 +17,18 @@ export class MainComponent implements OnInit {
   ngOnInit() {}
 
   yourSavedData(){
-
+    this.router.navigateByUrl("/saved");
   }
   viewRepositories(){
-
     this.router.navigateByUrl("/repo")
 
   }
 
   viewStatistics(){
-
+    this.router.navigateByUrl('statistics');
   }
   addRepository(){
-
+    this.router.navigateByUrl('requestadd');
   }
 
   onLogout() {
